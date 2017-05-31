@@ -20,7 +20,7 @@ RSpec.feature "Editing Exercise" do
 		find(link).click
 
 		fill_in "Duration", with: 45
-		click_buton "Update Exercise"
+		click_button "Update Exercise"
 
 		flash_message = "Exercise has been updated"
 		expect(page).to have_content(flash_message)
@@ -28,3 +28,5 @@ RSpec.feature "Editing Exercise" do
 		expect(page).not_to have_content(48)
 
 	end
+
+end
