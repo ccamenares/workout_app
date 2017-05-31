@@ -8,8 +8,8 @@ RSpec.feature "A user signs in" do
 	scenario do 
 		visit "/"
 		click_link "Sign In"
-		fill_in "Username" with: "john@example.com"
-		fill_in "Password" with: "password"
+		fill_in "Username", with: "john@example.com"
+		fill_in "Password", with: "password"
 		click_button "Sign In"
 
 		expect(page).to have_content("You have succesfully signed in.")
