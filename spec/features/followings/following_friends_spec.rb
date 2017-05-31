@@ -1,4 +1,4 @@
-require 'rails_helper'reuire
+require 'rails_helper'
 
 RSpec.feature "Following Friends" do 
 	before do 
