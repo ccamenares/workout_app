@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
-	def destroy 
-		current_user.destroy
-		flash[:notice] = "User Has been deleted"
-		redirect_to "/"
+
+	def destroy
+				User.find(params[:id]).destroy
+				flash[:alert] = "You have deleted your profile."
+				redirect_to root_path
 	end
+
 end

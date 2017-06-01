@@ -16,16 +16,11 @@ scenario "themself" do
 
 	click_link("Delete")
 
-	expect(page).to have_content("Are you sure you want to delete yourself? This can not be undone.")
-	click_button("Yes")
-
 	flash_message = "You have deleted your profile."
 	expect(page).to have_content(flash_message)
 	expect(page).to have_link("Sign up")
 	expect(page).to have_link("Sign in")
 
-
-
-end
+	end
 
 end
