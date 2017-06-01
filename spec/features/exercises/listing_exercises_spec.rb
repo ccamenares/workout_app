@@ -4,13 +4,13 @@ RSpec.feature "Listing Exercises" do
 	before do 
 		@john = User.create(first_name: "John", last_name: "Doe", email: "john@example.com", password: "password")
 
-		@e1 = @john.exercises.create(duration_in_min: 20,
+		@e1 = @john.exercises.create(duration_in_min: 120,
 																	workout: "My body building activity",
 																	workout_date: Date.today)
-		@e2 = @john.exercises.create(duration_in_min: 55,
+		@e2 = @john.exercises.create(duration_in_min: 110,
 																	workout: "Weight lifting",
 																	workout_date: 2.days.ago)	
-		@e3 = @john.exercises.create(duration_in_min: 35,
+		@e3 = @john.exercises.create(duration_in_min: 100,
 																	workout: "On treadmill",
 																	workout_date: 8.days.ago)	
 
