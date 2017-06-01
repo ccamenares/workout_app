@@ -14,7 +14,7 @@ scenario "themself" do
 	expect(page).to have_content(@john.full_name)
 	expect(page).to have_link("Delete")
 
-	click_button("Delete")
+	click_link("Delete")
 
 	expect(page).to have_content("Are you sure you want to delete yourself? This can not be undone.")
 	click_button("Yes")
